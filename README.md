@@ -6,11 +6,15 @@ This is a helpful cross-platform mobile application for giving crime data about 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Built With [TODO]
+## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [C#](https://msdn.microsoft.com/en-us/library/kx37x362.aspx) - The frontend language
+* [Xamarin](https://www.xamarin.com/) - C# library that allows for easy building of iOS and Andriod Applications
+* [Python](https://www.python.org/) - The backend language
+* [MongoDB](https://www.mongodb.com/) - The database used
+* [Amazon Web Services](https://aws.amazon.com/) - The database used
+
+
 
 ## Authors [TODO]
 
