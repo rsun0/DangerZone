@@ -12,15 +12,16 @@ These instructions will get you a copy of the project up and running on your loc
 * [Xamarin](https://www.xamarin.com/) - C# library that allows for easy building of iOS and Andriod Applications
 * [Python](https://www.python.org/) - The backend language
 * [MongoDB](https://www.mongodb.com/) - The database used
-* [Amazon Web Services](https://aws.amazon.com/) - The database used
+* [Amazon Web Services](https://aws.amazon.com/) - Hosts database
+* [Heroku](https://heroku.com/)
 
 
 
-## Authors [TODO]
+## Authors
 
 * **Arun Arjunakani** - *Database Manager* - [arunarjunakani](https://github.com/arunarjunakani)
 * **Ben Cooper** - *Front-End Developer* - [bencooper222](https://github.com/bencooper222)
-* **Zac** - *Backend Developer* - [Fix this Zac](https://github.com/arunarjunakani)
+* **Zac codiamat** - *Backend Developer* - [zacode11](https://github.com/zacode11)
 * **Ray Sun** - *Backend Developer* - [rsun0](https://github.com/rsun0)
 
 ## License
