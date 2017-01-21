@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * **Arun Arjunakani** - *Database Manager* - [arunarjunakani](https://github.com/arunarjunakani)
 * **Ben Cooper** - *Front-End Developer* - [bencooper222](https://github.com/bencooper222)
-* **Zac codiamat** - *Backend Developer* - [zacode11](https://github.com/zacode11)
+* **Zac Codiamat** - *Backend Developer* - [zacode11](https://github.com/zacode11)
 * **Ray Sun** - *Backend Developer* - [rsun0](https://github.com/rsun0)
 
 ## License
