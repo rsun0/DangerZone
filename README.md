@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 * [Python](https://www.python.org/) - The backend language
 * [MongoDB](https://www.mongodb.com/) - The database used
 * [Amazon Web Services](https://aws.amazon.com/) - Hosts database
-* [Heroku](https://heroku.com/) - Hosts server
+* [Heroku](https://heroku.com/) - Hosts server-side code
 
 
 
