@@ -3,4 +3,5 @@
 	<uses-sdk android:minSdkVersion="19" />
 	<application android:label="Phoneword" android:icon="@drawable/Icon"></application>
 	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>
