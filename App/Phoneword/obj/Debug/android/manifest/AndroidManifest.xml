@@ -2,12 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Phoneword.Phoneword" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="19" />
-  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
   <uses-permission android:name="android.permission.CALL_PHONE" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="Phoneword" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="Phoneword" android:name="md5eb8cee9bb2852617ab2e56c7bf729ae8.MainActivity">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBUOESb45auVRCDM7BSPuiiLW-W5k4DHXw" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:icon="@drawable/icon" android:label="Danger Zone" android:name="md5eb8cee9bb2852617ab2e56c7bf729ae8.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -22,4 +29,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <user-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
 </manifest>

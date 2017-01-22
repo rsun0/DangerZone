@@ -52,6 +52,10 @@ C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\PCLStorage.Ab
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\PCLStorage.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Xamarin.GooglePlayServices.Base.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Flurl.pdb
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Flurl.xml
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\bin\Debug\Flurl.dll.mdb

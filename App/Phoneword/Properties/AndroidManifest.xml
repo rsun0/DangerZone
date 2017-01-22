@@ -1,7 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Phoneword.Phoneword" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="19" />
-	<application android:label="Phoneword" android:icon="@drawable/Icon"></application>
-	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<application android:label="Phoneword" android:icon="@drawable/Icon">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBUOESb45auVRCDM7BSPuiiLW-W5k4DHXw" />
+
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+  <uses-permission android:name="android.permission.CALL_PHONE" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <user-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+
+  <uses-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 </manifest>

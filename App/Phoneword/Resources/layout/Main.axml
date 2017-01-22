@@ -6,7 +6,7 @@
     android:id="@+id/compass">
 
   <Button
-        android:text="MAP BITCH"
+        android:text="City View"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/switch2" />

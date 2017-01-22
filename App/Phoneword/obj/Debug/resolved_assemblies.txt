@@ -8,6 +8,10 @@ C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\asset
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\PCLStorage.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\System.Net.Http.Extensions.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\System.Net.Http.Primitives.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\benco\Documents\GitHub\CrimeAlert\App\Phoneword\obj\Debug\android\assets\System.Core.dll

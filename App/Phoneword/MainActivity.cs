@@ -11,22 +11,26 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Locations;    
+using Android.Locations;
+using Android.Gms.Maps;
+using System.Net;
+using System.IO;
 
 namespace Phoneword
 {
 
 
-    [Activity(Label = "Phoneword", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Danger Zone", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+
         protected override void OnCreate(Bundle bundle)
         {
 
 
             base.OnCreate(bundle);
 
-            Console.WriteLine(RestfulFun.GetLocationJSON(41.870480, -87.652329));
+         //   Console.WriteLine(RestfulFun.GetLocationJSON(41.870480, -87.652329));
 
 
 
@@ -44,47 +48,58 @@ namespace Phoneword
 
             JObject locationDanger;
 
-
+            double lat = 41.783401;
+            double lon = -87.639758;
 
 
             JSONButton.Click += (object sender, EventArgs e) =>
             {
-                JSONButton.Text = "FUCK";
-                Console.WriteLine("Here2!");
-                locationDanger = RestfulFun.MakeGETRequest(RestfulFun.GetLocationJSON(41.783401, -87.639758));
 
-
-                //   double danger = (double)locationDanger["danger"]["north"];
-
-                for (int i = 0; i != 3; i++)
-                {
-                    layout.AddView(DrawGodamnArrow(i, locationDanger, layout));
-                }
-                text.Text = "North is " + Math.Round((double)locationDanger["danger"]["north"], 2) + "x dangerous," + "\n"
-                   + "West is " + Math.Round((double)locationDanger["danger"]["west"], 1) + "x dangerous," + "\n"
-                   + "East is " + Math.Round((double)locationDanger["danger"]["north"], 1) + "x dangerous, and" + "\n"
-                   + "South is " + Math.Round((double)locationDanger["danger"]["north"], 1) + "x dangerous" + "\n"
-                   + "than the average spot in Chicago";
-
-
-
-
+                MakeCompass(lat, lon, layout, text);
+                
 
 
             };
 
+
             MapButton.Click += (object sender, EventArgs e) =>
             {
                 SetContentView(Resource.Layout.Map);
+
                 Button CompassButton = FindViewById<Button>(Resource.Id.switch3);
                 CompassButton.Click += (object s, EventArgs en) =>
                 {
                     SetContentView(Resource.Layout.Main);
+                    OnCreate(bundle);
                 };
 
             };
 
 
+
+        }
+
+
+        private void MakeCompass(double lat, double lon, RelativeLayout layout, TextView text)
+        {
+            JObject locationDanger;
+          //  JSONButton.Text = "FUCK";
+            Console.WriteLine("Here2!");
+            locationDanger = RestfulFun.MakeGETRequest(RestfulFun.GetLocationJSON(lat, lon));
+            lat += .001;
+            lon += .001;
+
+            //   double danger = (double)locationDanger["danger"]["north"];
+
+            for (int i = 0; i != 3; i++)
+            {
+                layout.AddView(DrawGodamnArrow(i, locationDanger, layout));
+            }
+            text.Text = "North is " + Math.Round((double)locationDanger["danger"]["north"], 2) + "x dangerous," + "\n"
+               + "West is " + Math.Round((double)locationDanger["danger"]["west"], 1) + "x dangerous," + "\n"
+               + "East is " + Math.Round((double)locationDanger["danger"]["north"], 1) + "x dangerous, and" + "\n"
+               + "South is " + Math.Round((double)locationDanger["danger"]["north"], 1) + "x dangerous" + "\n"
+               + "than the average spot in Chicago";
 
         }
 
