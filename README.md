@@ -1,6 +1,6 @@
 # Crime Alert [TODO]
 
-This is a helpful cross-platform mobile application for giving crime data about the surrounding neighborhood.
+This is a helpful cross-platform mobile application that calculates the relative danger of a certain location in an urban environment. Currently supports the City of Chicago and surrounding neighborhoods. 
 
 ## Getting Started [TODO]
 
