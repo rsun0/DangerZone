@@ -12,6 +12,7 @@ namespace Core
 			else
 				raw = raw.ToUpperInvariant();
 
+            Console.WriteLine("HEYYYY");
 			var newNumber = new StringBuilder();
 			foreach (var c in raw)
 			{

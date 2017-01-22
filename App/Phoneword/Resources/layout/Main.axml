@@ -25,4 +25,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/CallButton"
         android:layout_marginBottom="70.0dp" />
+    <Button
+        android:text="Request JSON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/JSONButton" />
+    <TextView
+        android:text="Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/json" />
 </LinearLayout>

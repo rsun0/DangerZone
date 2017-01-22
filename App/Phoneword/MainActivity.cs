@@ -1,4 +1,9 @@
+#define TRACE
 using System;
+using System.Diagnostics;
+
+using Newtonsoft.Json.Linq;
+using System.Drawing;
 
 using Android.App;
 using Android.Content;
@@ -15,30 +20,42 @@ namespace Phoneword
 		protected override void OnCreate (Bundle bundle)
 		{
 
-            
-
-			base.OnCreate (bundle);
+          
+            base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-            Console.WriteLine("starting!");
-            RestfulFun.makeGETrequest("https://serene-island-67380.herokuapp.com/request");
+           
 
             // Get our UI controls from the loaded layout
             EditText phoneNumberText = FindViewById<EditText>(Resource.Id.PhoneNumberText);
 			Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
 			Button callButton = FindViewById<Button>(Resource.Id.CallButton);
+            Button JSONButton = FindViewById<Button>(Resource.Id.JSONButton);
+            TextView text = FindViewById<TextView>(Resource.Id.json);
 
-			// Disable the "Call" button
-			callButton.Enabled = false;
+            JObject locationDanger; 
+
+
+            JSONButton.Click += (object sender, EventArgs e) =>
+            {
+                JSONButton.Text = "FUCK";
+                Console.WriteLine("Here2!");
+                locationDanger = RestfulFun.makeGETrequest("https://serene-island-67380.herokuapp.com/request");
+                text.Text = locationDanger.ToString();
+            };
+
+            // Disable the "Call" button
+            callButton.Enabled = false;
 
 			// Add code to translate number
 			string translatedNumber = string.Empty;
 
 			translateButton.Click += (object sender, EventArgs e) =>
 			{
-				// Translate user’s alphanumeric phone number to numeric
+                // Translate user’s alphanumeric phone number to numeric
+                translateButton.Text = "YAS QUEEN";
 				translatedNumber = Core.PhonewordTranslator.ToNumber(phoneNumberText.Text);
 				if (String.IsNullOrWhiteSpace(translatedNumber))
 				{
