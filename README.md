@@ -1,8 +1,8 @@
-# Crime Alert [TODO]
+# Danger Zone
 
 This is a helpful cross-platform mobile application that calculates the relative danger of a certain location in an urban environment. Currently supports the City of Chicago and surrounding neighborhoods. 
 
-## Getting Started [TODO]
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -11,8 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 * [C#](https://msdn.microsoft.com/en-us/library/kx37x362.aspx) - The frontend language
 * [Xamarin](https://www.xamarin.com/) - C# library that allows for easy building of iOS and Andriod Applications
 * [Python](https://www.python.org/) - The backend language
-* [MongoDB](https://www.mongodb.com/) - The database used
-* [Amazon Web Services](https://aws.amazon.com/) - Hosts database
 * [Heroku](https://heroku.com/) - Hosts server-side code
 
 
